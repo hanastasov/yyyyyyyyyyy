@@ -16,5 +16,8 @@ await builder.Build().RunAsync();
 
 void RegisterIgniteUI(IServiceCollection services)
 {
-    
+    services.AddIgniteUIBlazor(
+        typeof(IgniteUI.Blazor.Controls.IgbListModule),
+        typeof(IgniteUI.Blazor.Controls.IgbAvatarModule)
+    );
 }

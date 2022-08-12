@@ -1,6 +1,23 @@
 @page "/"
 
-<div class="row-layout master-view-container"></div>
+<div class="row-layout master-view-container">
+    <IgbList class="list" master-view-scope>
+        <IgbListItem>
+            <div slot="start">
+                <IgbAvatar Shape="AvatarShape.Circle">
+                    <span class="material-icons">person</span>
+                </IgbAvatar>
+            </div>
+            <div slot="title">Title goes here</div>
+            <div slot="subtitle">Subtitle...</div>
+            <div slot="end">
+                <span class="material-icons icon">
+                    star
+                </span>
+            </div>
+        </IgbListItem>
+    </IgbList>
+</div>
 
 @code {
 }
